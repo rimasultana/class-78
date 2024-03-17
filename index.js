@@ -1,21 +1,14 @@
-// syntex
-
-class ClassName {
-    constructor(){
-
-    }
-}
-
-
 class Car {
-    constructor(name, year){
+    constructor(name, year) {
         this.name = name;
         this.year = year;
     }
+    age(){
+        const data = new Data();
+        return data.getFullYear() - this.year;
+    }
 }
 
-const myCar = new Car ("Forad", 2038);
+const myCar = new Car("BMW", 2002);
 
-const myCar2 = new Car ("Audi", 2019);
-
-console.log(myCar2);
+console.log(myCar.age());
